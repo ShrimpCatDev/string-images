@@ -9,9 +9,9 @@ export function drawString (color_1: number, color_2: number, width: number, hei
     for (let Y = 0; Y <= height - 1; Y++) {
         for (let X = 0; X <= width - 1; X++) {
             if (string.charAt(index) == "1") {
-                scene.backgroundImage().setPixel(X + x, Y + y, color_1)
+                output.setPixel(X + x, Y + y, color_1)
             } else {
-                scene.backgroundImage().setPixel(X + x, Y + y, color_2)
+                output.setPixel(X + x, Y + y, color_2)
             }
             index += 1
         }
